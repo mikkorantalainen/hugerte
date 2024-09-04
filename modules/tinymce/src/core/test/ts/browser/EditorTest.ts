@@ -401,6 +401,7 @@ describe('browser.tinymce.core.EditorTest', () => {
     assert.isFalse(editor.isDirty(), 'setDirty/isDirty');
 
     editor.setDirty(true);
+    // @ts-ignore tsc version 4.9.5 is too stupid to understand that syntax lastArgs?.type is okay here
     assert.equal(lastArgs?.type, 'dirty', 'setDirty/isDirty');
     assert.isTrue( editor.isDirty(), 'setDirty/isDirty');
 
