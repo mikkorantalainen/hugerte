@@ -33,7 +33,7 @@ const tab = (editor: Editor): Dialog.TabSpec & { name: string } => {
     return identifyUnknownPlugin(editor, key);
   }, (x) => {
     // We know this plugin, so use our stored details.
-    const html = makeLink({ name: x.name, url: `https://www.tiny.cloud/docs/hugerte/6/${x.slug}/` });
+    const html = makeLink({ name: x.name, url: `https://www.tiny.cloud/docs/tinymce/6/${x.slug}/` });
     return { name: x.name, html };
   });
 
